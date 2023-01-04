@@ -6,6 +6,9 @@ body{
 *{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -27,10 +30,14 @@ body{
     gap: 20px;
 }
 .contaclinks{
+    border-radius: 10px;
     text-decoration: none;
     color: white;
     padding: 10px;
     background-color: rgb(1, 242, 162);
+}
+.nav-link{
+    padding: 5px;
 }
 #Contactofme img{
     width: 100%;
@@ -39,4 +46,19 @@ body{
     width: 20%;
     margin: auto;
     margin-bottom: 10px;
+}
+.resume{
+    background-color: rgb(41, 244, 41);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.resume:hover{
+    color:white;
+    background-color: black;
+}
+.resume:active{
+    transform: scale(0.85);
+    /* transform: scale(0.85); */
+    box-shadow: 3px 2px 25px 1px rgba(0,0,0,0.25);
 }
