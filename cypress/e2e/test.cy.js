@@ -14,33 +14,6 @@ describe("Test", function () {
         cy.visit(url);
       });
 
-      it(`Take screenshots`, () => {
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- navbar", {
-          capture: "viewport",
-        });
-
-        cy.get('[id="home"]').scrollIntoView();
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- home", { capture: "viewport" });
-
-        cy.get('[id="about"]').scrollIntoView();
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- about", { capture: "viewport" });
-
-        cy.get('[id="skills"]').scrollIntoView();
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- skills", { capture: "viewport" });
-
-        cy.get('[id="projects"]').scrollIntoView();
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- projects", { capture: "viewport" });
-
-        cy.get('[id="contact"]').scrollIntoView();
-        cy.wait(1000);
-        cy.screenshot("Screenshot -- contact", { capture: "viewport" });
-      });
-
       it(`Submitted link should be a github.io link`, () => {
         cy.url().should("include", ".github.io/");
         cy.then(() => {
@@ -135,21 +108,9 @@ describe("Test", function () {
       });
 
       it(`Check for professional photo`, () => {
-        cy.get(".home-img").should("have.attr", "src");
+        cy.get(".home-img").find("img").should("have.attr", "src");
         cy.then(() => {
           acc_score += 1;
-        });
-      });
-
-      it(`Minimum of 4 projects must be present`, () => {
-        cy.get(".project-card").then(($proj) => {
-          expect(
-            $proj.length,
-            "Number of projects present in portfolio are not sufficient"
-          ).to.be.at.least(4);
-        });
-        cy.then(() => {
-          acc_score += 2;
         });
       });
 
@@ -167,17 +128,32 @@ describe("Test", function () {
 
           cy.wrap($proj).find(".project-tech-stack").should("not.be.empty");
 
-          cy.wrap($proj).within(() => {
-            cy.get(".project-github-link").then(($elem) => {
-              checkLink($elem, ".project-github-link", "");
+          cy.wrap($proj)
+            .get(".project-github-link")
+            .should("have.attr", "href")
+            .and("include", "https://github.com/");
+          cy.wrap($proj)
+            .get(".project-github-link")
+            .invoke("attr", "target")
+            .should("eq", "_blank");
+          cy.wrap($proj)
+            .get(".project-github-link")
+            .then((link) => {
+              cy.request(link.prop("href")).its("status").should("eq", 200);
             });
-          });
 
-          cy.wrap($proj).within(() => {
-            cy.get(".project-deployed-link").then(($elem) => {
-              checkLink($elem, ".project-deployed-link", "");
+          cy.wrap($proj)
+            .get(".project-deployed-link")
+            .should("have.attr", "href");
+          cy.wrap($proj)
+            .get(".project-deployed-link")
+            .invoke("attr", "target")
+            .should("eq", "_blank");
+          cy.wrap($proj)
+            .get(".project-deployed-link")
+            .then((link) => {
+              cy.request(link.prop("href")).its("status").should("eq", 200);
             });
-          });
 
           cy.then(() => {
             acc_score += 1;
@@ -185,33 +161,23 @@ describe("Test", function () {
         });
       });
 
-      it(`Check for components in Skills section`, () => {
-        cy.get('[id="skills"]').within(() => {
-          cy.get(".skills-card").each(($card) => {
-            cy.wrap($card).find(".skills-card-img");
-            cy.wrap($card).find(".skills-card-name");
-          });
-        });
-        cy.then(() => {
-          acc_score += 1;
-        });
-      });
-
       it(`Check for links to GitHub and LinkedIn`, () => {
-        cy.get('[id="contact-github"]').then(($elem) => {
-          checkLink($elem, '[id="contact-github"]', "https://github.com/");
-        });
+        cy.get('[id="contact-github"]')
+          .should("have.attr", "href")
+          .and("include", "https://github.com/");
+        cy.get('[id="contact-github"]')
+          .invoke("attr", "target")
+          .should("eq", "_blank");
         cy.then(() => {
           acc_score += 1;
         });
 
-        cy.get('[id="contact-linkedin"]').then(($elem) => {
-          checkLink(
-            $elem,
-            '[id="contact-linkedin"]',
-            "https://www.linkedin.com/in/"
-          );
-        });
+        cy.get('[id="contact-linkedin"]')
+          .should("have.attr", "href")
+          .and("include", "https://www.linkedin.com/in/");
+        cy.get('[id="contact-linkedin"]')
+          .invoke("attr", "target")
+          .should("eq", "_blank");
         cy.then(() => {
           acc_score += 1;
         });
@@ -231,32 +197,8 @@ describe("Test", function () {
         });
       });
 
-      it(`Check if the resume buttons are within the respective sections`, () => {
-        cy.get('[id="nav-menu"]').within(() => {
-          cy.get('[id="resume-button-1"]');
-        });
-
-        cy.get('[id="home"],[id="about"]').within(() => {
-          cy.get('[id="resume-button-2"]');
-        });
-        cy.then(() => {
-          acc_score += 2;
-        });
-      });
-
       it(`Check if resume button in Resume section is downloading a PDF file`, () => {
         cy.task("deleteFilesIn", "cypress/downloads").then(() => {
-          cy.get('[id="resume-button-1"]').then(($elem) => {
-            checkLink(
-              $elem,
-              '[id="resume-link-1"]',
-              "https://drive.google.com/"
-            );
-            cy.then(() => {
-              acc_score += 1;
-            });
-          });
-
           cy.get('[id="resume-button-1"]').click();
           cy.wait(3000).then(() => {
             cy.task("getFilesIn", "cypress/downloads").then((after) => {
@@ -280,17 +222,6 @@ describe("Test", function () {
 
       it(`Check if resume button in Home/About section is downloading a PDF file`, () => {
         cy.task("deleteFilesIn", "cypress/downloads").then(() => {
-          cy.get('[id="resume-button-2"]').then(($elem) => {
-            checkLink(
-              $elem,
-              '[id="resume-link-2"]',
-              "https://drive.google.com/"
-            );
-            cy.then(() => {
-              acc_score += 1;
-            });
-          });
-
           cy.get('[id="resume-button-2"]').click();
           cy.wait(3000).then(() => {
             cy.task("getFilesIn", "cypress/downloads").then((after) => {
@@ -312,47 +243,37 @@ describe("Test", function () {
         });
       });
 
-      it(`Check for GitHub calendar`, () => {
-        cy.get(".react-activity-calendar").should((article) => {
-          expect(article, "GitHub calendar heatmap not found").to.exist;
-          expect(article).to.not.be.empty;
+      it(`Check if the resume links are google drive links and open in a new tab`, () => {
+        cy.get('[id="resume-link-1"]')
+          .should("have.attr", "href")
+          .and("include", "https://drive.google.com/");
+        cy.get('[id="resume-link-1"]')
+          .invoke("attr", "target")
+          .should("eq", "_blank");
+
+        cy.get('[id="resume-link-2"]')
+          .should("have.attr", "href")
+          .and("include", "https://drive.google.com/");
+        cy.get('[id="resume-link-2"]')
+          .invoke("attr", "target")
+          .should("eq", "_blank");
+
+        cy.then(() => {
+          acc_score += 2;
+        });
+      });
+
+      it(`Check if the resume buttons are within the respective sections`, () => {
+        cy.get('[id="nav-menu"]').within(() => {
+          cy.get('[id="resume-button-1"]');
         });
         cy.then(() => {
           acc_score += 1;
         });
-      });
 
-      it(`Check for GitHub streak stats`, () => {
-        cy.get('[id="github-streak-stats"]')
-          .should("have.attr", "src")
-          .and(
-            "include",
-            "https://github-readme-streak-stats.herokuapp.com?user="
-          );
-        cy.then(() => {
-          acc_score += 1;
+        cy.get('[id="home"],[id="about"]').within(() => {
+          cy.get('[id="resume-button-2"]');
         });
-      });
-
-      it(`Check for GitHub top languages card`, () => {
-        cy.get('[id="github-top-langs"]')
-          .should("have.attr", "src")
-          .and(
-            "include",
-            "https://github-readme-stats.vercel.app/api/top-langs/?username="
-          );
-        cy.then(() => {
-          acc_score += 1;
-        });
-      });
-
-      it(`Check for GitHub stats card`, () => {
-        cy.get('[id="github-stats-card"]')
-          .should("have.attr", "src")
-          .and(
-            "include",
-            "https://github-readme-stats.vercel.app/api?username="
-          );
         cy.then(() => {
           acc_score += 1;
         });
@@ -375,36 +296,4 @@ describe("Test", function () {
       //////////////////
     });
   });
-
-  function checkLink(elem, anchorElem, includeLink) {
-    // TODO: there's no need for anchorElem in the function calls
-    if (elem.attr("href")) {
-      // do anchor tag testing
-      cy.get(anchorElem)
-        .should("have.attr", "href")
-        .and("include", includeLink);
-      cy.get(anchorElem).invoke("attr", "target").should("eq", "_blank");
-      cy.get(anchorElem).then((link) => {
-        cy.log(link);
-        cy.request(link.prop("href")).its("status").should("eq", 200);
-      });
-    } else {
-      cy.window()
-        .document()
-        .then(function (doc) {
-          doc.addEventListener("click", () => {
-            setTimeout(function () {
-              doc.location.reload();
-            }, 5000);
-          });
-
-          /* Make sure the file exists */
-          cy.intercept("/", (req) => {
-            req.reply((res) => {
-              expect(res.statusCode).to.equal(200);
-            });
-          });
-        });
-    }
-  }
 });

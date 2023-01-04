@@ -1,6 +1,6 @@
 # Student Portfolio Analyser
 
-## Maximum Marks - 33
+## Maximum Marks - 26
 
 ```
  ✅ Submitted link is a github.io link - 1 mark
@@ -11,31 +11,22 @@
  ✅ Formal introduction is present - 1 mark
  ✅ About section is titled - 1 marks
  ✅ Professional photo is present - 1 marks
- ✅ Minimum of 4 samples of projects are present - 2 marks
- ✅ Each project card has an image, title, deployed link, repository link - 1 mark each
- ✅ Each skills card has the corresponding image and name - 1 mark
+ ✅ Samples of projects are present (maximum 4) each with an image, title, deployed link, repository link
  ✅ Links to GitHub and LinkedIn profiles are present - 2 marks
  ✅ Phone number is present - 1 mark
  ✅ Email address is present - 1 mark
- ✅ Resume buttons are present in the Resume section and the Home/About section - 2 marks
- ✅ Clicking on the resume button in the Resume section opens the link in a new tab and downloads the resume in PDF format - 2 marks
- ✅ Clicking on the resume button in the Home/About section section opens the link in a new tab and downloads the resume in PDF format - 2 marks
- ✅ GitHub calendar heatmap is present - 1 mark
- ✅ GitHub streak stats are present - 1 mark
- ✅ GitHub top languages card is present - 1 mark
- ✅ GitHub stats card is present - 1 mark
+ ✅ Resume button is present in the Resume section & clicking on it downloads the resume in PDF format - 2 marks
+ ✅ Resume button is present in the Home/About section & clicking on it downloads the resume in PDF format - 2 marks
+ ✅ Clicking on the resume buttons opens the google drive link in a new tab - 2 marks
 
 ```
 
 ### You haven't been taught cypress to run the test cases locally, you can see the passed/ failed test cases and test errors on CP itself.
 
-### CP will attempt to take screenshots of each component in your portfolio. You can view these screenshots in the "Screenshots" dropdown in the logs page. The marks allotted to you are independent of these.
-
 ## Some Rules to follow:-
 
 - Before writing a single line of code please read the problem statement very carefully.
 - If you don't follow these rules you might not get any marks even if you do everything correctly.
-- Have a look at the TestErrors on the logs page and Google them if any of your test cases have failed to figure out what might have gone wrong.
 
 ## Problem Statement and Instructions:-
 
@@ -69,20 +60,12 @@
   - Tech stack used : class="project-tech-stack"
   - Link to GitHub repository : class="project-github-link"
   - Deployed link or video link : class="project-deployed-link"
-- Each skills card in the Skills section should have class="skills-card" and the following:
-  - Image : class="skills-card-img"
-  - Name : class="skills-card-name"
-- There must be two buttons for resume. Clicking on them should open the resume in a new tab and download it as a PDF. They must have the following IDs:
+- There must be two buttons for resume. Clicking on them should download it as a PDF. They must have the following IDs:
   - For the button in the Resume section : id="resume-button-1"
   - For the button in the Home/About section : id="resume-button-2"
-- If you're using anchor elements for the resume buttons, they must have the following IDs:
+- The anchor elements for the resume buttons must have the following IDs:
   - For the button in the Resume section : id="resume-link-1"
   - For the button in the Home/About section : id="resume-link-2"
-- For the GitHub calendar: class="react-activity-calendar" (the class is automatically included if you're using the react-github-calendar npm package)
-- The GitHub statistics images must have the following IDs:
-  - GitHub streak stats : id="github-streak-stats" [Link to refer : https://github-readme-streak-stats.herokuapp.com/demo/]
-  - GitHub top languages : id="github-top-langs" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
-  - GitHub stats card : id="github-stats-card" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
 - Do not repeat any of the above class names and ID names for any other element.
 
 #### General guidelines
@@ -91,3 +74,4 @@
 - so we request you to read the problem carefully and debug it before itself
 - we also request you not just submit it last minute
 - try to keep one submission at a time
+- helllo
