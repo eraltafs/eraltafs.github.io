@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+#logo img{
+    width: 30%;
+    margin-top: 5px;
+}
+#Contactofme{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#nav-menu{
+    display: flex;
+    gap: 20px;
+}
+.contaclinks{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgb(1, 242, 162);
+}
+#Contactofme img{
+    width: 100%;
+}
+#prophoto{
+    width: 20%;
+    margin: auto;
+    margin-bottom: 10px;
+}
