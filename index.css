@@ -6,6 +6,9 @@ body{
 *{
     box-sizing: border-box;
 }
+h2{
+    text-align: center;
+}
 a{
     text-decoration: none;
 }
@@ -65,4 +68,25 @@ a{
 #projects{
     margin: auto;
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project-card{
+    text-align: center;
+}
+.skills-card-img{
+    width: 80%;
+}
+#skills{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+.skills-card{
+    width: 20%;
+    border: 1px solid black;
 }
