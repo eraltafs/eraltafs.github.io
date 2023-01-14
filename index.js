@@ -22,8 +22,9 @@ function closeMenu() {
 GitHubCalendar(".react-activity-calendar", "eraltafs")
 
 document.getElementById("resume-button-2").onclick = ()=>{
-    location.href ="https://drive.google.com/file/d/1VYVu17N1Ok_K1JJn4XuE_3NK8V8vEtTF/view?usp=sharing" 
+    location.href ="\\static\\pdf\\Altaf_Khan_Resume.pdf"
+     
 }
-// document.getElementById("resume-link-1").onclick = ()=>{
-//     location.href ="\\static\\pdf\\Altaf_Khan_Resume.pdf" 
-// }
+document.getElementById("resume-button-1").onclick = ()=>{
+    location.href ="\\static\\pdf\\Altaf_Khan_Resume.pdf" 
+}
