@@ -202,7 +202,18 @@ h3 {
   width: 100%;
  
 }
+#calendar{
+  width: 60%;
+  margin: auto;
+  
+}
+.contrib-column{
+  display: none;
 
+}
+.react-activity-calendar{
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   #nav-menu {
       position: absolute;
