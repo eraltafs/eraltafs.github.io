@@ -161,14 +161,10 @@ h3 {
   margin-bottom: 20px;
 }
 
-#skills{
-  
-}
-
 .skills-card-img {
   width: 50%;
 }
-#skillsflex {
+#skills{
   width: 80%;
   margin: auto;
   display: grid;
