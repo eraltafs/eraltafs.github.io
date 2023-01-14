@@ -4,28 +4,41 @@
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #101010;
+  color: white;
+}
 h1{
-  margin-bottom: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  padding: 0px;
   text-align: center;
+  
 }
 
 h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
   text-align: center;
+
 }
 a {
   text-decoration: none;
 }
 #navbar {
   position: sticky;
-  background-color: white;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
 #navbar img{
-width: 10%;
+width: 5%;
 }
 #nav-menu {
   display: flex;
@@ -56,7 +69,7 @@ width: 10%;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: rgb(1, 242, 162);
 }
 
 #Contactofme {
@@ -71,14 +84,26 @@ width: 10%;
   padding: 10px;
   background-color: rgb(1, 242, 162);
 }
-
-#home img {
-  width: 100%;
-}
-#prophoto {
-  width: 20%;
+#home{
+  width: 70%;
   margin: auto;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+#home img {
+  border-radius: 50%;
+  width: 20%
+}
+#user-detail-name{
+
+  font-size: 200%;
+}
+#user-detail-name #name{
+  font-size: 250%;
 }
 .resume {
   background-color: rgb(41, 244, 41);
@@ -95,13 +120,18 @@ width: 10%;
   transform: scale(0.85);
   box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
 }
+.about{
+  margin-top:5%;
+  margin-bottom:5%;
+}
 h3 {
   text-align: center;
 }
 #user-detail-intro {
   width: 60%;
   margin: auto;
-  margin-top: 40px;
+  
+
   text-align: justify;
 }
 
@@ -121,19 +151,40 @@ h3 {
   text-align: center;
   width: 100%;
 }
-.skills-card-img {
-  width: 80%;
+.project-github-link, .project-deployed-link{
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin:10px ;
+  padding: 10px;
+  background-color: rgb(1, 242, 162);
+
 }
-#skills {
+
+.project-tech-stack{
+  margin-bottom: 20px;
+}
+
+#skills{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+.skills-card-img {
+  width: 50%;
+}
+#skillsflex {
   width: 80%;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
   justify-content: center;
   text-align: center;
 }
 .skills-card {
-  width: 20%;
-  border: 1px solid black;
+  width: 40%;
+
 }
 @media only screen and (max-width: 600px) {
   #nav-menu {
