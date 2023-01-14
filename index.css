@@ -69,12 +69,15 @@ width: 5%;
   background-color: rgb(1, 242, 162);
 }
 #contact{
-  
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 #Contactofme {
   width: 80%;
   margin: auto;
   text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .contaclinks {
   border-radius: 10px;
@@ -86,7 +89,8 @@ width: 5%;
 #home{
   width: 70%;
   margin: auto;
- 
+  margin-top: 1%;
+  margin-bottom: 1%;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -119,7 +123,8 @@ width: 5%;
   box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
 }
 #about{
-  
+  margin-top: 1%;
+  margin-bottom: 1%;
  text-align: center; 
 }
 h3 {
@@ -132,7 +137,8 @@ h3 {
   text-align: justify;
 }
 #projects{
- 
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 #projectsflex {
   margin: auto;
@@ -167,7 +173,8 @@ h3 {
   width: 50%;
 }
 #skills{
- 
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 #skillsflex {
   width: 80%;
@@ -183,7 +190,8 @@ h3 {
 
 }
 #stats{
- 
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 #stats_div{
   display: flex;
@@ -207,7 +215,8 @@ h3 {
 #calendar{
   width: 60%;
   margin: auto;
-  
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .contrib-column{
   display: none;
