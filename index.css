@@ -130,19 +130,18 @@ h3 {
 #user-detail-intro {
   width: 60%;
   margin: auto;
+  
+
   text-align: justify;
 }
-#projects{
-  margin-top:5%;
-  margin-bottom:5%;
-}
 
-#projectsgrid {
+#projects {
   margin: auto;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  margin-top: 10px;
 }
 .project-card {
   text-align: center;
