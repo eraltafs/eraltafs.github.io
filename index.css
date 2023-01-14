@@ -12,7 +12,8 @@ body{
   color: white;
 }
 h1{
- 
+  margin-top: 3%;
+  margin-bottom: 3%;
 
   padding: 0px;
   text-align: center;
@@ -20,7 +21,8 @@ h1{
 }
 
 h2 {
- 
+  margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
 }
 a {
@@ -69,7 +71,8 @@ width: 5%;
   background-color: rgb(1, 242, 162);
 }
 #contact{
-  
+    margin-top:5%;
+  margin-bottom:5%;
 }
 #Contactofme {
   width: 80%;
@@ -86,7 +89,8 @@ width: 5%;
 #home{
   width: 70%;
   margin: auto;
- 
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -119,7 +123,8 @@ width: 5%;
   box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
 }
 #about{
-  
+  margin-top:5%;
+  margin-bottom:5%;
  text-align: center; 
 }
 h3 {
@@ -132,7 +137,8 @@ h3 {
   text-align: justify;
 }
 #projects{
- 
+  margin-top:5%;
+  margin-bottom:5%;
 }
 #projectsflex {
   margin: auto;
@@ -167,7 +173,8 @@ h3 {
   width: 50%;
 }
 #skills{
- 
+  margin-top:5%;
+  margin-bottom:5%;
 }
 #skillsflex {
   width: 80%;
@@ -183,7 +190,8 @@ h3 {
 
 }
 #stats{
- 
+  margin-top:5%;
+  margin-bottom:5%;
 }
 #stats_div{
   display: flex;
