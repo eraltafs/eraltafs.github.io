@@ -21,10 +21,9 @@ h1{
 }
 
 h2 {
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
-
 }
 a {
   text-decoration: none;
@@ -71,7 +70,10 @@ width: 5%;
   transition: all 0.3s ease-in-out;
   background-color: rgb(1, 242, 162);
 }
-
+#contact{
+  margin-top:5%;
+  margin-bottom:5%;
+}
 #Contactofme {
   width: 80%;
   margin: auto;
@@ -134,14 +136,16 @@ h3 {
   margin-bottom: 10px;
   text-align: justify;
 }
-
-#projects {
+#projects{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+#projectsflex {
   margin: auto;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-top: 10px;
 }
 .project-card {
   text-align: center;
@@ -165,12 +169,14 @@ h3 {
   margin-bottom: 20px;
 }
 
-
-
 .skills-card-img {
   width: 50%;
 }
-#skills {
+#skills{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+#skillsflex {
   width: 80%;
   margin: auto;
   display: grid;
@@ -182,6 +188,10 @@ h3 {
 .skills-card {
   width: 40%;
 
+}
+#stats{
+  margin-top:5%;
+  margin-bottom:5%;
 }
 #stats_div{
   display: flex;
@@ -198,7 +208,7 @@ h3 {
 #stats_div>div:last-child {
   width: 31%;
 }
-#stats img{
+#stats_div img{
   width: 100%;
  
 }
