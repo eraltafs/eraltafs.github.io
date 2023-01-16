@@ -65,22 +65,22 @@ a {
   background-color: rgb(1, 242, 162);
 }
 #contact {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 #Contactofme {
   width: 80%;
   margin: auto;
   text-align: center;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #home {
   width: 70%;
   margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -113,8 +113,8 @@ a {
   box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
 }
 #about {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
 }
 h3 {
@@ -127,8 +127,8 @@ h3 {
   text-align: justify;
 }
 #projects {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 #projectsflex {
   margin: auto;
@@ -155,6 +155,7 @@ h3 {
   margin: 10px;
   padding: 10px;
   background-color: rgb(1, 242, 162);
+  margin-bottom: 40px;
 }
 .project-github-link:hover,
 .project-deployed-link:hover,
@@ -176,8 +177,8 @@ h3 {
   width: 50%;
 }
 #skills {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 #skillsflex {
   width: 80%;
@@ -192,8 +193,8 @@ h3 {
   width: 40%;
 }
 #stats {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 #stats_div {
   display: flex;
@@ -207,15 +208,15 @@ h3 {
   width: 36.7%;
 }
 #stats_div > div:last-child {
-  width: 31%;
+  width: 32%;
 }
 #stats_div img {
   width: 100%;
 }
 #calendar {
   margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .contrib-column {
   display: none;
@@ -284,5 +285,31 @@ h3 {
   }
   .skills-card {
     width: 50%;
+  }
+  #Contactofme {
+    display: flex;
+  }
+  .contaclinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    background-color: rgb(1, 242, 162);
+  }
+  #user-detail-name {
+    font-size: 100%;
+  }
+  #user-detail-name #name {
+    font-size: 150%;
+  }
+  #user-detail-intro {
+    width: 100%;
+    
+    margin-bottom: 10px;
+    text-align: justify;
   }
 }
