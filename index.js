@@ -19,7 +19,8 @@ function closeMenu() {
 }
 
 
-GitHubCalendar(".react-activity-calendar", "eraltafs")
+// GitHubCalendar(".react-activity-calendar", "eraltafs")
+GitHubCalendar(".react-activity-calendar", "eraltafs", { responsive: true });
 
 document.getElementById("resume-button-2").onclick = ()=>{
     location.href ="\\static\\pdf\\Altaf_Khan_Resume.pdf"
