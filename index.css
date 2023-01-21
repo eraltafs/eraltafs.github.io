@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 #navbar {
-  position: sticky;
+  position: fixed;
 
   display: flex;
   justify-content: space-between;
