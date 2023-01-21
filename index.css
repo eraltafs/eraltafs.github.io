@@ -47,9 +47,10 @@ a {
 }
 #navbar {
   position: fixed;
+  z-index: 1;
   background-color: #ffffff;
   top: 0;
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +58,7 @@ a {
   width: 100%;
 }
 #navbar img {
-  width: 5%;
+  width: 65px;
   border-radius: 50%;
 }
 #nav-menu {
@@ -132,8 +133,7 @@ a {
 #home {
   width: 70%;
   margin: auto;
-  margin-top: 18%;
-  margin-bottom: 5%;
+  margin-top: 15%;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -309,7 +309,7 @@ a {
     width: 100%;
   }
   #navbar img {
-    width: 10%;
+    width: 65px;
     border-radius: 50%;
   }
   #home img {
