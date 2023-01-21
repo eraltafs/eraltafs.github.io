@@ -47,11 +47,14 @@ a {
 }
 #navbar {
   position: fixed;
-
+  background-color: #ffffff;
+  top: 0;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
+  width: 100%;
 }
 #navbar img {
   width: 5%;
@@ -61,6 +64,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 #nav-menu .resume{
   margin: 0px;
@@ -128,7 +132,7 @@ a {
 #home {
   width: 70%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 18%;
   margin-bottom: 5%;
   display: flex;
   gap: 40px;
@@ -300,6 +304,9 @@ a {
   }
   #nav-menu.active {
     left: 0;
+  }
+  #navbar{
+    width: 100%;
   }
   #navbar img {
     width: 10%;
