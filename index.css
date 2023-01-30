@@ -119,20 +119,21 @@ a {
   background-color: rgb(1, 242, 162);
 }
 #contact {
- 
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #Contactofme {
   width: 80%;
   margin: auto;
   text-align: center;
-  
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
 #home {
   width: 70%;
   margin: auto;
-  
+  margin-top: 15%;
   display: flex;
   gap: 4px;
   justify-content: center;
@@ -153,7 +154,8 @@ a {
 
 
 #about {
-  
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -165,7 +167,8 @@ a {
   
 }
 #projects {
-  
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #projectsflex {
   margin: auto;
@@ -215,7 +218,8 @@ a {
   width: 50%;
 }
 #skills {
-  
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 90%;
   margin: auto;
 }
@@ -250,7 +254,8 @@ a {
 #calendar {
   margin: auto;
   width: 100%;
-
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .contrib-column {
   display: none;
