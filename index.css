@@ -135,8 +135,8 @@ a {
   margin: auto;
   margin-top: 15%;
   display: flex;
-  gap: 40px;
-  justify-content: center;
+  gap: 4px;
+
   align-items: center;
 }
 #home img {
