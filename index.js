@@ -27,5 +27,5 @@ document.getElementById("resume-button-2").onclick = ()=>{
      
 }
 document.getElementById("resume-button-1").onclick = ()=>{
-    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf","_blank")
+    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf")
 }
