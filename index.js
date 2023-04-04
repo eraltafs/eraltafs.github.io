@@ -24,10 +24,10 @@ GitHubCalendar(".react-activity-calendar", "eraltafs", { responsive: true });
 
 document.getElementById("resume-button-2").onclick = ()=>{
     // location.href= "\\static\\pdf\\Altaf_Khan_Resume.pdf"
-    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf")
+    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf",'_blank')
      
 }
 document.getElementById("resume-button-1").onclick = ()=>{
     // location.href= "\\static\\pdf\\Altaf_Khan_Resume.pdf"
-    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf")
+    window.open("\\static\\pdf\\Altaf_Khan_Resume.pdf",'_blank')
 }
