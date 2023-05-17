@@ -131,14 +131,14 @@ a {
   margin-top: 15%;
   margin-bottom: 10%;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 #home img {
-  /* border-radius: 50%; */
+  border-radius: 10px;
   width: 200px;
   height: 220px;
 }
@@ -314,6 +314,7 @@ a {
   }
  
   #home img {
+    margin-top: 20px;
     /* border-radius: 50%; */
     width: 150px;
     height: 165px;
