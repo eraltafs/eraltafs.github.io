@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-style: italic;
 }
 html {
@@ -19,7 +19,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   padding: 0px;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 
 h2 {
@@ -28,19 +28,20 @@ h2 {
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 40px;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 h3 {
   background: -webkit-linear-gradient(rgb(110, 235, 129), rgb(180, 181, 180));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
-h4{
+h4 {
   font-weight: 200;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -65,25 +66,23 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-#nav-menu .resume{
+#nav-menu .resume {
   margin: 0px;
-
 }
-#resume-button-1:hover{
+#resume-button-1:hover {
   background-color: green;
   color: white;
 }
-#resume-button-1:active{
+#resume-button-1:active {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
-#resume-button-2:hover{
+#resume-button-2:hover {
   background-color: green;
   color: white;
 }
-#resume-button-2:active{
+#resume-button-2:active {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
@@ -94,14 +93,13 @@ a {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-
 }
 
 .nav-link:hover {
   color: #ffffff;
   background: green;
 }
-.nav-link:active{
+.nav-link:active {
   background: white;
   color: black;
 }
@@ -118,10 +116,7 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: rgb(1, 242, 162);
 }
-#contact {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+
 #Contactofme {
   width: 80%;
   margin: auto;
@@ -131,43 +126,47 @@ a {
 }
 
 #home {
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 15%;
+  margin-bottom: 10%;
   display: flex;
   gap: 4px;
   justify-content: center;
   align-items: center;
-}
-#home img {
-  border-radius: 50%;
-  width: 15%;
-}
-#user-detail-name {
-  font-size: 200%;
-  
-}
-#user-detail-name #name {
-  font-size: 250%;
-  font-family: 'Caveat', cursive;
-}
-
-
-#about {
-  margin-top: 5%;
-  margin-bottom: 5%;
   text-align: center;
 }
 
+#home img {
+  /* border-radius: 50%; */
+  width: 200px;
+}
+#user-detail-name {
+  font-size: 200%;
+}
+#user-detail-name #name {
+  font-size: 250%;
+  font-family: "Caveat", cursive;
+}
+
+#about {
+  
+  margin: auto;
+  
+  
+
+  text-align: center;
+
+}
+
 #user-detail-intro {
-  width: 60%;
+  width: 80%;
   margin: auto;
   margin-bottom: 40px;
   text-align: justify;
-  
 }
 #projects {
-  margin-top: 5%;
+  
   margin-bottom: 5%;
 }
 #projectsflex {
@@ -199,14 +198,14 @@ a {
 }
 .project-github-link:hover,
 .project-deployed-link:hover,
-.contactlinks:hover{
+.contactlinks:hover {
   background-color: green;
 }
 .project-github-link:active,
 .project-deployed-link:active,
-.contactlinks:active{
+.contactlinks:active {
   transform: scale(0.85);
- 
+
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -218,9 +217,6 @@ a {
   width: 50%;
 }
 #skills {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 90%;
   margin: auto;
 }
 #skillsflex {
@@ -228,10 +224,9 @@ a {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- gap: 10px;
+  gap: 10px;
   align-items: center;
   text-align: center;
-  
 }
 
 #stats_div {
@@ -261,18 +256,16 @@ a {
   display: none;
 }
 .react-activity-calendar {
-  
   margin: auto;
   width: 70%;
 }
-.styles_calendar__kghkr{
-  
+.styles_calendar__kghkr {
   display: block;
-    max-width: 100%;
-    height: auto;
-    overflow: visible;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
 }
-.project-tech-stack strong{
+.project-tech-stack strong {
   color: rgb(1, 242, 162);
 }
 @media only screen and (max-width: 640px) {
@@ -290,31 +283,38 @@ a {
     padding: 10px;
     margin: 8px 0px;
   }
-  .nav-link{
+  .nav-link {
     color: #101010;
-    padding:  10px 0px;
+    padding: 10px 0px;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     margin: 4px;
   }
-  .nav-link:active{
+  .nav-link:active {
     background: white;
     color: black;
   }
   #nav-menu.active {
     left: 0;
   }
-  #navbar{
+  #navbar {
     width: 100%;
   }
   #navbar img {
     width: 65px;
     border-radius: 50%;
   }
+  #home {
+    width: 90%;
+    display: block;
+    margin-top: 20%;
+    
+  }
+ 
   #home img {
-    border-radius: 50%;
-    width: 40%;
+    /* border-radius: 50%; */
+    width: 150px;
   }
   .hamburger {
     display: block;
@@ -333,7 +333,7 @@ a {
   }
   #projectsflex {
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -349,19 +349,15 @@ a {
   #stats_div > div:last-child {
     width: 100%;
   }
- 
+
   #skillsflex {
-    width: 60%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     justify-content: center;
-  align-items: center;
-  text-align: center;
   }
- 
+
   #Contactofme {
-    
     width: 40%;
   }
   .contactlinks {
@@ -376,7 +372,7 @@ a {
     background-color: rgb(1, 242, 162);
   }
   #user-detail-name {
-    font-size: 140%;
+    font-size: 30px;
   }
   #user-detail-name #name {
     font-size: 200%;
@@ -387,8 +383,37 @@ a {
     text-align: justify;
   }
   .react-activity-calendar {
-  
     margin: auto;
     width: 90%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #skillsflex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-github-link,
+  .project-deployed-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .project-tech-stack{
+    margin: 0px;
+  }
+  .contactlinks{
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #contact h2{
+    font-size: 25px;
+  }
+  #user-detail-name {
+    font-size: 20px;
+  }
+  #home{
+    margin-top:110px;
   }
 }
