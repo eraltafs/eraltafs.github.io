@@ -140,6 +140,7 @@ a {
 #home img {
   /* border-radius: 50%; */
   width: 200px;
+  height: 220px;
 }
 #user-detail-name {
   font-size: 200%;
@@ -315,6 +316,7 @@ a {
   #home img {
     /* border-radius: 50%; */
     width: 150px;
+    height: 165px;
   }
   .hamburger {
     display: block;
