@@ -151,13 +151,9 @@ a {
 }
 
 #about {
-  
   margin: auto;
-  
-  
 
   text-align: center;
-
 }
 
 #user-detail-intro {
@@ -167,7 +163,6 @@ a {
   text-align: justify;
 }
 #projects {
-  
   margin-bottom: 5%;
 }
 #projectsflex {
@@ -175,15 +170,22 @@ a {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  row-gap: 50px;
+  column-gap: 10px;
 }
 .project-card {
   text-align: center;
   width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  
+  border-radius: 10px;
+  box-shadow: rgba(169, 169, 169, 0.35) 0px 5px 15px;
 }
 .project-card img {
   text-align: center;
-  width: 100%;
+  width: 85%;
+  height: 40%;
 }
 .project-github-link,
 .project-deployed-link,
@@ -229,7 +231,9 @@ a {
   align-items: center;
   text-align: center;
 }
-
+#stats {
+  margin-top: 100px;
+}
 #stats_div {
   display: flex;
   gap: 10px;
@@ -310,9 +314,8 @@ a {
     width: 90%;
     display: block;
     margin-top: 20%;
-    
   }
- 
+
   #home img {
     margin-top: 20px;
     /* border-radius: 50%; */
@@ -339,7 +342,10 @@ a {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    row-gap: 50px;
+  }
+  .project-card {
+    height: 410px;
   }
   #stats_div {
     display: block;
@@ -390,6 +396,16 @@ a {
     width: 90%;
   }
 }
+img {
+  transition: transform 0.4s; /* Animation */
+  margin: 20px 0px;
+  /* border-radius: 10px; */
+}
+img:hover {
+  transform: scale(1.2);
+  /* border: 1px solid red; */
+ filter: drop-shadow(rgba(135, 135, 135, 0.35) 0px 5px 15px);  
+}
 @media only screen and (max-width: 300px) {
   #skillsflex {
     grid-template-columns: repeat(2, 1fr);
@@ -401,22 +417,25 @@ a {
     align-items: center;
     margin-bottom: 0px;
   }
-  .project-tech-stack{
+  .project-card {
+    height: 100%;
+  }
+  .project-tech-stack {
     margin: 0px;
   }
-  .contactlinks{
+  .contactlinks {
     display: flex;
     justify-content: center;
     margin-left: -20px;
     margin-right: -20px;
   }
-  #contact h2{
+  #contact h2 {
     font-size: 25px;
   }
   #user-detail-name {
     font-size: 20px;
   }
-  #home{
-    margin-top:110px;
+  #home {
+    margin-top: 110px;
   }
 }
